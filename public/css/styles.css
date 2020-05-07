@@ -37,10 +37,11 @@ header {
     border-bottom: 1px solid #eeeeee;
 }
 
+
 h1 {
-    font-size: 64px;
-    margin-bottom: 16px;
-}
+    font-size: 2rem;
+    line-height: 36px;
+    }
 
 header a {
     color: #888888;
