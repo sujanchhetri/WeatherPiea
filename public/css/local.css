@@ -1,32 +1,14 @@
 body {
-min-height: 100vh;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-background-color:  #333333;;
+color: #cccccc;
+font-family: arial;
+max-width: 650px;
 margin: 0 auto;
-color: white;
-}
+padding: 0 16px;
+background-color: #333333;
+display: flex;
+flex-direction: column;
 
-/* background color on top of bg image*/
-.hero {
-    position: absolute;
-    min-height: 100vh;
-    min-width: 100vw;
-    top: 0;
-    bottom: 0;
-    background-color:  #333333;
-    z-index: -5;
-}
-
-/* navbar */
-.navbar {
-background-color:  #333333;
-}
-
-.navbar a {
-color: white;
-font-size: 25px;
+min-height: 100vh
 }
 
 /* weather section */
@@ -37,7 +19,18 @@ background-color:  #333333;
 border-radius: 20px;
 color: white;
 }
-
+header {
+    
+	margin: 16px;
+	margin-bottom: 48px;
+	border-bottom: 1px solid #eeeeee;
+                               }
+footer {
+	color: #888888;
+	border-top: 1px solid #eeeeee;
+	margin-top: 16px;
+	padding: 16px 0;
+                               }
 .weather-head {
 height: 50%;
 }
@@ -72,14 +65,31 @@ padding-top: 0.5rem;
 padding-bottom: 0.5rem;
 }
 .main-content {
-	flex-grow: 1;
+flex-grow: 1;
 }
 
 h1 {
-	font-size: 2rem;
-	line-height: 36px;
+font-size: 2rem;
+line-height: 36px;
 }
 span{
-	font-size: 1rem;	
+font-size: 1rem;
 }
+header {
+margin-top: 16px;
+margin-bottom: 48px;
+}
+
+header a {
+color: #888888;
+margin-right: 16px;
+text-decoration: none;
+}
+a{
+color: azure;
+}
+hr{
+color: azure;
+}
+
 

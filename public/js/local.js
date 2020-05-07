@@ -27,8 +27,7 @@ location.innerHTML = `${city}, ${country}`;
 var lat = jsonIp.loc.split(",")[0];
 var lon = jsonIp.loc.split(",")[1];
 console.log(lat+" "+lon)
-var weatherApi = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&${appid}`;
-
+var weatherApi = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&${appid}`;
 //calling openweathermap api function
 httpReqWeatherAsync(weatherApi);
 }

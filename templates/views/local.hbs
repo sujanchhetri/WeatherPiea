@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Weather Map</title>
+<title>local-weather</title>
 <link rel="icon" href="/img/weather.png">
  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 <!-- bootstrap -->
@@ -18,29 +18,26 @@
 <link rel="stylesheet" type="text/css" href="css/local.css">
 </head>
 <body>
-<div class="hero">
-<!-- navbar -->
-<nav class="navbar">
-  <a class="navbar-brand" href="#">
-    <i class="fa fa-sun-o" aria-hidden="true"></i>
-    <strong>local</strong>Weather
-  </a>
-  <span id="date" class="lead">12:00PM | Sep 27, 2019</span>
-</nav>
-<!-- weather section  -->
 <div class="main-content">
-<div class="row">
-<div id="" class="col-8 mx-auto weather">
+	
+{{>header}}
+
+<!-- weather section  -->
+<div class="container">
+<span id="date" class="lead">12:00PM | Sep 27, 2019</span>
+<div>
 <!-- weather header section -->
 <div class="weather-head">
+
 <h1 id="location">Kathmandu, Nepal</h1>
+</div>
 <div class="row">
 <div id="description" class="description col-6 text-center">
 <i id="icon-desc" class="wi wi-owm-200"></i>
 <p class="desc">thunderstorm</p>
 </div>
 <div id="temperature" class="col-6 text-center">
-60 <i id="icon-thermometer" class="wi wi-thermometer"></i>
+60°C <i id="icon-thermometer" class="wi wi-thermometer"></i>
 </div>
 </div>
 <!-- weather body header -->
@@ -73,8 +70,7 @@
 </div>
 </div>
 </div>
-
-</div>
+{{>footer}}
 <!-- javascript file -->
 <script src="js/local.js"></script>
 

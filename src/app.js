@@ -29,7 +29,7 @@ app.get('', (req, res) => {
 
 app.get('/local', (req, res) => {
     res.render('local', {
-        title: 'About',
+        title: 'local-weather',
         name: 'Sujan Chhetri'
     })
 })
@@ -102,5 +102,5 @@ app.get('*', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log('Server is running'+port)
+    console.log('Server is running at:'+port)
 })
