@@ -48,7 +48,7 @@ var weatherDesc = jsonWeather.weather[0].description;
 var id = jsonWeather.weather[0].id;
 var icon = `<i class="wi wi-owm-${id}"></i>`
 var temperature = jsonWeather.main.temp;
-var tempFaren = Math.round(1.8 * (temperature - 273) + 32)
+var tempFaren = Math.round(temperature-273.15)
 // console.log(tempFaren)
 var humidity = jsonWeather.main.humidity;
 var windSpeed = jsonWeather.wind.speed; 

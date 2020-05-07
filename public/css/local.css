@@ -43,7 +43,7 @@ height: 50%;
 }
 
 #icon-desc {
-font-size: 5rem;
+font-size: 2rem;
 padding-top: 2rem;
 }
 
@@ -55,21 +55,31 @@ font-size: 1.5rem;
 }
 
 #description {
-font-size: 2rem;
+font-size: 1rem;
 }
 
 #temperature {
-font-size: 7rem;
+font-size: 1rem;
 }
 
 #icon-thermometer {
-font-size: 5rem;
+font-size: 1rem;
 }
 
 #humidity, #wind, #visibility {
-font-size: 2rem;
-padding-top: 1rem;
-padding-bottom: 1rem;
+font-size: 1rem;
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+}
+.main-content {
+	flex-grow: 1;
 }
 
+h1 {
+	font-size: 2rem;
+	line-height: 36px;
+}
+span{
+	font-size: 1rem;	
+}
 
