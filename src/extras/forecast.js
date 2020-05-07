@@ -16,7 +16,7 @@ const forecast = (latitude,longitude,callback) => {
                                                                       let y = body.sys.sunset;
                                                                       let d1 = new Date(x*1000).toLocaleTimeString();
                                                                       let d2 = new Date(y*1000).toLocaleTimeString();
-                                                                      let time = new Date().toLocaleTimeString();
+                                                                      let time = new Date().toLocaleTimeString({timezone:body.timezone});
                                                                       callback(undefined,'It is currently '+time+'.The temperature is '+t+'°C,'+body.weather[0].description+'.Maximum temperature  is '+t1+'°C & Minimum temperature  is '+t2+'°C.Sunrise at '+d1+'.Sunset at '+d2)
                                                                       }
                                    })
