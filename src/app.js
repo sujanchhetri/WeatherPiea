@@ -26,6 +26,13 @@ app.get('', (req, res) => {
     })
 })
 
+app.get('/local', (req, res) => {
+    res.render('local', {
+        title: 'About',
+        name: 'Sujan Chhetri'
+    })
+})
+
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About',
