@@ -14,10 +14,10 @@ const forecast = (latitude,longitude,callback) => {
                                                                       var t2 = Math.round(body.main.temp_min-273.15)
                                                                       let x = body.sys.sunrise;
                                                                       let y = body.sys.sunset;
-                                                                      let d1 = new Date(x*1000).toLocaleTimeString();
-                                                                      let d2 = new Date(y*1000).toLocaleTimeString();
-                                                                      let time = new Date().toLocaleTimeString({timezone:body.sys.country});
-                                                                      callback(undefined,'It is currently '+time+'.The temperature is '+t+'°C,'+body.weather[0].description+'.Maximum temperature  is '+t1+'°C & Minimum temperature  is '+t2+'°C.Sunrise at '+d1+'.Sunset at '+d2)
+                                                                      let z = body.timezone;
+                                                                      let d1 = new Date(x+z*1000).toLocaleTimeString();
+                                                                      let d2 = new Date(y+z*1000).toLocaleTimeString();
+                                                                      callback(undefined,'The temperature is '+t+'°C,'+body.weather[0].description+'.Maximum temperature  is '+t1+'°C & Minimum temperature  is '+t2+'°C.Sunrise at '+d1+'.Sunset at '+d2)
                                                                       }
                                    })
                                    
