@@ -8,6 +8,7 @@
 ## Steps to use( In terminal)
 * `npm install` to install all dependencies
 * Run the app with `node src/app.js`
+* In browser search for `localhost:3000`
 ### NOTE:
 * Make sure You have Node.js installed
 * Get api keys from:
