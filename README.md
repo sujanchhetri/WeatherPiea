@@ -3,6 +3,7 @@
 ## Dependencies
 * express `npm i express`
 * hbs `npm i hbs`
+* request`npm i request`
 
 ## Steps to use( In terminal)
 * `npm install` to install all dependencies
